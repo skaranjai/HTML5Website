@@ -16,7 +16,7 @@
 $(document).ready(function(){
     $.get("https://ipinfo.io", function(response) {
     debugger;
-            alert(response.ip);
+            alert("IP of the machine:-"+response.ip);
      }, "json")
     $(".navbar .nav-link").on('click', function(event) {
 
