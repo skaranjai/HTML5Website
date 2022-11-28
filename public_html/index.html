@@ -10,6 +10,20 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
 	<link rel="stylesheet" href="assets/css/meyawo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script> 
+<script>
+     
+    // Add "https://ipinfo.io" statement
+    // this will communicate with the ipify servers
+    // in order to retrieve the IP address
+    $.get("https://ipinfo.io", function(response) {
+    debugger;
+            alert(response.ip);
+        }, "json")
+         
+        // "json" shows that data will be fetched in json format
+    </script>​
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
